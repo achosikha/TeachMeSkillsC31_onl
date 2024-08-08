@@ -1,7 +1,6 @@
 /**
  * JadaDoc
  */
-
 package lesson_2;
 
 // package java - subfolder util - class Scanner
