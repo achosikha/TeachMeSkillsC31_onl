@@ -42,6 +42,9 @@ public class ArraysClass {
         System.out.println("-----------------------------------------------------");
         // System.arraycopy();
         int[] arrayThree = new int[10];
+        // int - 4 byte
+        // 10 el * 4 = 40 byte
+        // String name = "Archil" -> char 1 byte, 5 char * 1 char = 5 byte
         // 1 - откуда, 2 - с какой позиции, 3 - куда, 4 - с какой позиции куда, и сколько элементов
         System.arraycopy(arrayTwo, 0, arrayThree, 4, 5);
 
