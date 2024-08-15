@@ -8,6 +8,8 @@ import java.util.Scanner;
 // Re-write code according to your taste
 // Add feature to check whether the letter has already been entered
 // To avoid double-checking
+// Add check whether you have entered one hidden word or a few words
+// if one word OK if not mistake re-enter
 
 public class GameGuessWord {
     public static void main(String[] args) {
