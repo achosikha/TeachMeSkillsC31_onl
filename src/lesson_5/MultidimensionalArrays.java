@@ -14,6 +14,7 @@ public class MultidimensionalArrays {
         modelling[0] = new String[10][];
         modelling[0][0] = new String[4];
          */
+
         int[][][] numbers = new int[][][]{
                 {
                     { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 }
