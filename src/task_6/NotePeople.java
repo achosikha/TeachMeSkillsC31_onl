@@ -77,8 +77,9 @@ public class NotePeople {
 
     String getFullInformation(){
         return "Name: " + this.name + "\n" + // "Name: " + this.name + \n
-                "Surname: " + this.surname + "\n" +
+                "Surname: " + this.surname + "\n" + // \n - new line
                 "Address: " + this.address + "\n" +
                 "Telephone number: " + this.telephoneNumber;
+        // create String -> "Name"....
     }
 }
