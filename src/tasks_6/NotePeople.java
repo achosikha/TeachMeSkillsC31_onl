@@ -1,4 +1,4 @@
-package task_6;
+package tasks_6;
 
 public class NotePeople {
     // Attributes
