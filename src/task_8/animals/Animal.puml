@@ -1,0 +1,6 @@
+@startuml
+class Anima{
+void eat(String);
+void sound();
+}
+@enduml
