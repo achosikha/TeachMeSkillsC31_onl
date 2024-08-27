@@ -11,13 +11,10 @@ public abstract class Instruments {
         this.instrumentType = instrumentType;
     }
 
-    public String sound(){
-        return "";
-    }
-
-    public String speed(){
-        return "";
-    }
+    // Abstract method has no body just signature
+    public abstract String sound();
+    public abstract String speed();
+    public abstract void getAdditionalData(String[] data);
 
     @Override
     public String toString() {

@@ -18,6 +18,11 @@ public class MainAgenda {
         GuitarFender fenderGuitar = new GuitarFender("Jack", "Fender");
         fenderGuitar.onlyForGuitars();
 
+        Instruments duduk = new Duduk("Goisha", "Duduk");
+        duduk.getAdditionalData(new String[]{"One", "Two", "Three"});
+        Instruments piano = new Piano("Depp", "Piano");
+        piano.getAdditionalData(new String[]{"Klavier 1", "Klavier 2"});
+
         // Abstract methods
 
         // Interfaces
