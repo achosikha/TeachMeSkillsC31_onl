@@ -15,6 +15,12 @@ public class Human {
         this.additional = Arrays.copyOf(additional, additional.length);
     }
 
+    public Human(Human temp){
+        this.name = temp.name;
+        this.age = temp.age;
+        this.additional = Arrays.copyOf(temp.additional, temp.additional.length);
+    }
+
     void getOnlyHumanMethod(){
         System.out.println("Human message!");
     }
