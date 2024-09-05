@@ -1,11 +1,45 @@
 package lesson_12;
 
-import java.text.Format;
 import java.util.Formatter;
 
 public class StringsAdditional {
     public static void main(String[] args) {
-        formattedBasics();
+        makeBasicStringBuilder();
+    }
+
+    public static void makeBasicStringBuilder(){
+        // StringBuilder
+        // StringBuffer -> before SE5 the most popular
+
+        // String -> immutable, not thread safe, not synchronized, fast
+        // Golden middle -> StringBuilder -> mutable, not thread safe, not synchronized, fast
+        // StringBuffer -> mutable, thread safe, synchronized, low
+        String archil = "Archil";
+        // to change use method, + -> concat +, -, =
+        // перегрузка бинарных операторов из С++, в Джаве +, =
+
+        StringBuffer buffer = new StringBuffer("Archil");
+        StringBuilder builder = new StringBuilder("Archil");
+
+        String valueOfCounter = String.valueOf(1);
+
+        // If we in a loop work with String modify we always create new object
+        // If you need to work with Strings in a loop and modify always go for StringBuilder
+        for (int counter = 1; counter < 5; counter++){
+            valueOfCounter += String.valueOf(counter); // creates new object of String
+        }
+
+        // StringBuilder - toString() -> явное указание приведение к строчке
+        // Особенно в циклах
+        System.out.println(builder.toString());
+
+        // tenet
+        builder.reverse();
+        System.out.println(builder);
+
+        StringBuilder tenet = new StringBuilder("tenet");
+        System.out.println(tenet);
+        System.out.println(tenet.reverse());
     }
 
     public static void formattedBasics(){
