@@ -60,8 +60,30 @@ public class Calculator extends JFrame {
         JButton minus = new JButton("-");
         minus.addActionListener(click);
 
-        body.add(clear);
-        body.add(backspace);
+        body.add(clear); // set ""
+        body.add(backspace);// String value = value - 1;
+
+        // Java 8 standard
+        backspace.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        // e -> System.out.println(e);
+        // (e, f) -> {
+        // ...
+        // ...
+        // }
+
+        /*
+        // new Java approach lambda
+        backspace.addActionListener(e -> {
+            // only backspace
+        });
+         */
+
         body.add(pow);
         body.add(minus);
 

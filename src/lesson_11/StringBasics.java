@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class StringBasics {
     public static void main(String[] args) {
+        String expression = "54/1/8/9";
+
+        String[] expressionSplit = expression.split("/");
+        System.out.println(Arrays.deepToString(expressionSplit));
+    }
+
+    public static void splitBasic(){
         // split -> cuts one part of the String from another basing on 'marker'
         String expression = "54/2";
 
