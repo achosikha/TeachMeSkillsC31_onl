@@ -25,11 +25,17 @@ public class ReadWriteObject {
         writeObject.writeObject(p);
     }
 
-    public static Object deserializeObject() throws IOException {
+    public static Object deserializeObject() {
         File file = new File("src/lesson_14/serideser/person.txt");
-        ObjectInputStream writeObject = new ObjectInputStream(new FileInputStream(file));
 
-        // Object with Person data
-        return writeObject.read(); // Object Archil
+        try {
+            return new ObjectInputStream(new FileInputStream("src/lesson_14/serideser/person.txt")).readObject();
+        } catch (ClassNotFoundException e) {
+            System.out.println(e.getLocalizedMessage());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return (Object) new Person("Unknown", 0, "Unknown");
     }
 }
